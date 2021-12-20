@@ -98,7 +98,7 @@ app.use(function (err, req, res, next) {
 });
 
 // Define a port to listen to requests on.
-const HTTP_PORT = process.env.PORT || 8046;
+const HTTP_PORT = process.env.PORT || 8080;
 
 // Call this function after the http server starts listening for requests.
 function onHttpStart() {
