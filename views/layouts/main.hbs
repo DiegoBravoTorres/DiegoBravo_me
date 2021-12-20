@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Bravo | Front-end Developer | Web Designer</title>
+    <meta name="description" content="Front-end developer and designer in Toronto">
+    <link rel="stylesheet" href="/home.css">
+    <script type="text/javascript" src="/scroll.js"> </script>
+        <!-- IMPORT BOOTSTRAP STYLES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- IMPORT BOOTSTRAP SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Include jQuery Popup Overlay -->
+    <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js">
+  </script>
+    </head>
+<body id="body">
+  <header class="header" onload="navScroll()">
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar" >
+      <a class="icon-header" href="#"><img  src="media/icons/logo.jpg" alt="Diego Bravo Torres"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active" id="homelink">
+            <a class="nav-item nav-link" href="#">Start</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-item nav-link" href="#devAnchor">Projects</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-item nav-link" href="#contactAnchor">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+      </div>  
+    </header>
+    <div class="bannerHero">         
+      <h1 id="line1">I'm a Front-End Developer based in Toronto. I use HTML, CSS and JavaScript</h1>
+      <h1 id="line2">frameworks along with other technologies to create engaging experiences online.</h1>
+      <h1 id="line3">I've had fun working for some of the biggest companies across the continent. </h1>
+    </div> 
+
+    <div class="bannerHero-mobile">         
+      <h1 id="line1">I'm a Front-End Developer based</h1>
+      <h1 id="line2">in Toronto. I use HTML, CSS and </h1>
+      <h1 id="line3">JavaScript frameworks along with </h1>
+      <h1 id="line4">other technologies to create </h1>
+      <h1 id="line5">experiences online. I've had fun</h1>
+      <h1 id="line6">working for some of the biggest</h1>
+      <h1 id="line7">companies across the continent. </h1>
+    </div>   
+   
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-color:rgb(248, 248, 248);">
+      <h2 class="titleSection">Some of the Brands </br>I've Worked With</h2>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://www.telemundo.com/">
+          <img class="d-block mx-auto" style="width: 200px;" src="/media/brands/telemundo-logoB.png" alt="First slide">
+        </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.ford.mx/">
+          <img class="d-block  mx-auto" style="width: 165px;" src="/media/brands/Ford-LogoB.png" alt="Second slide">
+        </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.paypal.com/mx/webapps/mpp/home">
+          <img class="d-block mx-auto" style="width: 165px;" src="/media/brands/PayPal-Logo-2014-presentN.png" alt="Third slide">
+        </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.lincoln.mx/">
+          <img class="d-block mx-auto" style="width: 165px;" src="/media/brands/Lincoln-logo-2019-1920x1080.png" alt="Third slide">
+        </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.movistar.com.mx/">
+          <img class="d-block mx-auto" style="width: 165px;" src="/media/brands/Movistar-Logo.png" alt="Third slide">
+        </a>
+        </div>
+        <!-- <div class="carousel-item">
+          <a href="https://www.dallascowboys.com/" style="padding-bottom: 39px;">
+          <img class="d-block mx-auto" style="width: 165px;" src="/media/brands/CowboysBmob.png" alt="Third slide">
+        </a>
+        </div> -->
+        <div class="carousel-item">
+          <a href="https://www.nestle.com.mx/" target="_blank">
+          <img class="d-block mx-auto" style="width: 165px;" src="/media/brands/Nestle-Logo-2015-present.png" alt="Third slide">
+        </a>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+    </div>
+
+
+  
+<div id="brands">
+  <h2 class="titleSection">Some of the Brands I've Worked With</h2>
+  <div class="container" style="text-align: center;">
+    <div class="row" >
+      <div class="col">
+        <a href="https://www.telemundo.com/" target="_blank">
+        <img style="width: 200px;" src="/media/brands/telemundo-logoB.png" alt="Telemundo">
+      </a>
+      </div>
+      <div class="col">
+        <a href="https://www.ford.mx/" target="_blank">
+        <img style="width: 165px;" src="/media/brands/Ford-LogoB.png" alt="Ford">
+      </a>
+      </div>
+    <!--  <div class="col">
+        <a href="https://www.paypal.com/mx/webapps/mpp/home" target="_blank">
+        <img style="width: 165px;" src="/media/brands/PayPal-Logo-2014-presentN.png" alt="Paypal">
+      </a>
+      </div>-->
+      <div class="col">
+        <a href="https://www.lincoln.mx/" target="_blank">
+        <img style="width: 165px;" src="/media/brands/Lincoln-logo-2019-1920x1080.png" alt="Lincoln">
+      </a>
+      </div>
+    </div>
+    <div class="row">
+      <div style="text-align: center;"class="col">
+        <a href="https://www.movistar.com.mx/" target="_blank">
+        <img id="movistar" src="/media/brands/Movistar-Logo.png" alt="Movistar">
+      </a>
+      </div>
+      <div style="text-align: center;" class="col">
+        <a href="https://www.paypal.com/mx/webapps/mpp/home" target="_blank">
+          <img style="width: 150px;padding-top: 37px;" src="/media/brands/PayPal-Logo-2014-presentN.png" alt="Paypal">
+      </a>
+      </div>
+
+     <!--<div style="text-align: center;"class="col">
+        <a href="https://www.dallascowboys.com/" target="_blank">
+        <img style="width: 150px;" src="/media/brands/CowboysB.png" alt="Cowboys">
+      </a>
+      </div>-->
+
+      <div style="text-align: center;"class="col">
+        <a href="https://www.nestle.com.mx/" target="_blank">
+        <img style="width: 145px;margin-top: 24px;" src="/media/brands/Nestle-Logo-2015-present.png" alt="Nestle">
+      </a>
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+<div id="devAnchor"></div>
+
+<div id="developer">
+  <h2 class="titleSection">Projects</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 nopadding" >
+        <img class="imgGalleryUp PopFord_open" src="/media/developer/diego-bravo-ford-ecosport-thumb.jpg" alt="">
+      </div>
+      <div class="col-md-6 nopadding">
+        <img class="imgGalleryUp PopUnknown_open" src="/media/developer/diego-bravo-motherboard-thumb.jpg" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 nopadding">
+        <img class="imgGalleryUp PopFoodIdeas_open" src="/media/developer/diego-bravo-food-ideas-thumb.jpg" alt="food-ideas">
+      </div>
+      <div class="col-md-4 nopadding">
+        <img class="imgGalleryUp PopLincoln_open" src="/media/developer/diego-bravo-food-lincoln-thumb.jpg" alt="lincoln">
+      </div>
+      <div class="col-md-4 nopadding">
+        <img class="imgGalleryUp PopMovistar_open" src="/media/developer/diego-bravo-movistar-thumb.jpg" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 nopadding" >
+        <img class="imgGalleryUp PopFord_open" src="/media/designer/diego-bravo-gerber-thumb.jpg" alt="">
+      </div>
+      <div class="col-md-6 nopadding">
+        <img class="imgGalleryUp PopUnknown_open" src="/media/designer/diego-bravo-ford-thumb.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Add content to the popup -->
+<div id="JPO">
+  <div style="padding: 100px; background-color:white;">
+    <h1>Test</h1>
+    <p>Lorem Ipsum</p>
+  </div>
+  <!-- Add a button to close the popup (optional) -->
+  <button class="JPO_close">Close</button>
+</div>
+
+
+<div id="PopFord">
+  <div class="popup_content">
+    <div class="card mb-3">
+      <img class="card-img-top" src="/media/developer/overlays/diego-bravo-ford-ecosport-overlay.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Ford Mexico, Brasil & Argentina<small class="text-muted"><br>Agency: GTB</small></h5>
+        <p class="card-text">Creating sections for new models and update specs as well as prices and disclaimers.</br>Set up A/B Tests and Experiences.</br>
+          <div class="container">
+           <div class="row">
+             <div class="col-6">
+              <small class="text-muted">Tools:</br>
+                Adobe Experience Manager (AEM)</br>
+                VDM (Vehicle Data Manager)</br> 
+                Adobe Target</br> 
+                Jira (Agile Project Management)</br> </small>
+              </div>
+              <div class="col-6">
+                <small class="text-muted">Coding:</br>
+                  HTML, CSS</br>
+                  JSON APIs</br> </small>
+              </div>
+            </div>
+          </div>
+          <p><br></p>
+          <a href="https://www.ford.mx/" target="_blank" style="text-decoration: none;">
+            <button class="btn btn-danger">Go to site</button> </a>
+        <button class="PopFord_close btn btn-light">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="PopUnknown">
+  <div class="popup_content">
+    <div class="card mb-3">
+      <img class="card-img-top" src="/media/developer/overlays/diego-bravo-motherboard-overlay.jpg" alt="Card image cap">
+      <div class="card-body"> 
+        <h5 class="card-title"><i>Confidential Company</i><small class="text-muted"><br>Agency: Wipro</small></h5>
+        <p class="card-text">Update and audit content for a top IT company
+          website from the US.</br> Create automation tools for internal production (LEAN)</br> Due to a confidential agreedment I can't mention or use the name of this company.
+          <div class="container">
+           <div class="row">
+             <div class="col-6">
+              <small class="text-muted">Tools:</br>
+                Adobe Experience Manager (AEM)</br>
+                Claytablet</br> 
+                Jira (Agile Project Management)</br> </small>
+              </div>
+              <div class="col-6">
+                <small class="text-muted">Coding:</br>
+                  Visual Basic (Excel)</br> </small>
+              </div>
+            </div>
+          </div>
+          <p><br></p>
+          <a href="https://www.wipro.com/" target="_blank" style="text-decoration: none;">
+            <button class="btn btn-danger">Go to site</button> </a>
+        <button class="PopUnknown_close btn btn-light">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="PopFoodIdeas">
+  <div class="popup_content">
+    <div class="card mb-3">
+      <img class="card-img-top" src="/media/developer/overlays/diego-bravo-food-ideas-overlay.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Food Ideas<small class="text-muted"><br>Personal Project</small></h5>
+        <p class="card-text">Food Delivery service created from scratch.</br>
+          <div class="container">
+           <div class="row">
+             <div class="col-6">
+              <small class="text-muted">Tools:</br>
+                VS Code</br>
+                Heroku</br>
+                SendGrid</br>
+                Adobe Creative Suite</br> </small>
+              </div>
+              <div class="col-6">
+                <small class="text-muted">Coding:</br>
+                  HTML, CSS</br>
+                  Node.JS, Express.JS</br> 
+                  Handlebars</br> 
+                  MongoDB</br> 
+                  <br></small>
+              </div>
+            </div>
+          </div>
+          <p><br></p>
+          <a href="https://web322-diego.herokuapp.com/" target="_blank" style="text-decoration: none;">
+            <button class="btn btn-danger">Go to site</button> </a>
+        <button class="PopFoodIdeas_close btn btn-light">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="PopLincoln">
+  <div class="popup_content">
+    <div class="card mb-3">
+      <img class="card-img-top" src="/media/developer/overlays/diego-bravo-lincoln-overlay.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Lincoln MX & Puerto Rico<small class="text-muted"><br>Agency: GTB</small></h5>
+        <p class="card-text">Creating sections for new models and update specs as well as prices and disclaimers.</br>
+          <div class="container">
+           <div class="row">
+             <div class="col-6">
+              <small class="text-muted">Tools:</br>
+                Adobe Experience Manager (AEM)</br>
+                VDM (Vehicle Data Manager)</br> 
+                Jira (Agile Project Management)</br> </small>
+              </div>
+              <div class="col-6">
+                <small class="text-muted">Coding:</br>
+                  HTML, CSS</br>
+                  JSON APIs</br> </small>
+              </div>
+            </div>
+          </div>
+          <p><br></p>
+          <a href="https://www.lincoln.mx/" target="_blank" style="text-decoration: none;">
+        <button class="btn btn-danger">Go to site</button> </a>
+        <button class="PopLincoln_close btn btn-light">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="PopMovistar">
+  <div class="popup_content">
+    <div class="card mb-3">
+      <img class="card-img-top" src="/media/developer/overlays/diego-bravo-movistar-overlay.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Movistar MX<small class="text-muted"><br>Agency: Wunderman</small></h5>
+        <p class="card-text">Create and update landing pages as well as general content of the site. <br>Manage the media and data of every item on the online store.</br>
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+               <small class="text-muted">Tools:</br>
+                 Hybris (E-commerce)</br>
+                 LifeRay</br> 
+                 Wordpress</br>
+                 Trello (Project Management)</br> </small>
+               </div>
+               <div class="col-6">
+                 <small class="text-muted">Coding:</br>
+                   HTML, CSS</br>
+                   Vanilla JavaScript</br></small>
+               </div>
+             </div>
+           </div>
+           <p><br></p>
+           <a href="https://www.movistar.com.mx/" target="_blank" style="text-decoration: none;">
+            <button class="btn btn-danger">Go to site</button> </a>
+        <button class="PopMovistar_close btn btn-light">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="git">
+  <h2 class="titleSection" style="color: white;">Check out some of my code</h2>
+  <button type="button"  onclick=" window.open('https://github.com/DiegoBravoTorres/','_blank')" class="btn btn-outline-light">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+   &nbsp;My Repositories
+  </button>
+
+</div>
+
+
+
+<!--
+<div id="designer">
+  <h2 class="titleSection">Designer</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 nopadding" >
+        <img class="imgGalleryUp PopFord_open" src="/media/designer/diego-bravo-gerber-thumb.jpg" alt="">
+      </div>
+      <div class="col-md-6 nopadding">
+        <img class="imgGalleryUp PopUnknown_open" src="/media/designer/diego-bravo-ford-thumb.jpg" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 nopadding">
+        <img class="imgGalleryUp PopFoodIdeas_open" src="/media/developer/diego-bravo-food-ideas-thumb.jpg" alt="food-ideas">
+      </div>
+      <div class="col-md-4 nopadding">
+        <img class="imgGalleryUp PopLincoln_open" src="/media/developer/diego-bravo-food-lincoln-thumb.jpg" alt="lincoln">
+      </div>
+      <div class="col-md-4 nopadding">
+        <img class="imgGalleryUp PopMovistar_open" src="/media/developer/diego-bravo-movistar-thumb.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+<div class="me-intro">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-12 col-sm-4">
+        
+        <img style="width: 180px; border-radius: 50%;" src="/media/DigitalPhoto2.jpg" alt="Best web developer ever">
+        </div>
+        <div class="col-12 col-sm-8">
+          <p style="padding-top: 7%;"> <strong style="font-weight: 600;">Who else is Diego?</strong><br><br>He is a young professional original from Mexico who has lived in 6 different countries. He is also a DJ and <a target="_blank" href="https://open.spotify.com/artist/0eUui3jfdwBw2qYklhBUnW?si=epalfYCHTWiBePYNJy_x1Q" style="color: red;">electronic music producer</a> on the side. He enjoys reading, doing excercise, traveling, but must of all, meeting new people.</p>
+        </div>
+      </div>
+  </div>
+  <div id="contactAnchor"></div>
+</div>
+
+<div id="contactMe">
+  <h2 class="titleSection" style="color:#f73232;">Contact Me</h2>
+  <form method="post" action="/">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Please enter your name" required>
+      <br><br>
+      <label for="email">Email address</label>
+      <input type="email"  id="email" name="email" placeholder="Please enter your email" required>
+      <small class="form-text text-muted">I'll never share your email with anyone else.</small>
+      <br>
+      <label for="message">Message</label>
+      <textarea type="text"  id="message" name="message" placeholder="Please enter your message"></textarea>
+      <br><br>
+    <button type="submit" class="btn btn-outline-danger">Submit</button>
+  </form>
+</div>
+
+{{#if name}}
+ <div id="thankyou">
+     <div >{{name}}</div>
+     <button class="thankyou_close btn btn-light">Close</button>
+
+     </div> 
+{{/if}}
+    <footer>
+      <div class="container">
+            <h4 id="connect">Let's Connect</h4>
+             <img style="width: 30px;" src="/media/icons/face.png" alt="">
+             <img style="width: 60px;" src="/media/icons/61109.png" alt="">
+             <img style="width: 30px;" src="/media/icons/inst.png" alt="">
+          </div>
+          <div style="padding-top: 13px;">
+            <small id="copyright">Website Created by Diego Bravo Torres</small>
+          </div>
+        
+    </footer>
+    </div>
+    <button class="bi bi-arrow-up" onclick="topFunction()" id="myUpBtn" title="Go to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+    </button> 
+    
+</body>
+<script type="text/javascript" src="/popup.js"> </script>
+</html>
