@@ -65,7 +65,7 @@ app.post("/", (req,res)=>{
   const msg = {
     to: 'diegobt30@gmail.com',
     from: 'dbravo-torres@myseneca.ca', // Use the email address or domain you verified above
-    subject: 'From submission from diegobravo.com',
+    subject: 'From submission from diegobravo.me',
     html: `Sender :  ${req.body.name}<br>With the email : ${req.body.email}
     <br><br>Message : ${req.body.message}`,
   };
@@ -74,7 +74,8 @@ app.post("/", (req,res)=>{
   .then(() =>{
 
     res.render("layouts/main",{
-      name : req.body.name
+      name : req.body.name,
+      email: req.body.email
     })
   }
   ).catch((err) =>{
@@ -98,7 +99,7 @@ app.use(function (err, req, res, next) {
 });
 
 // Define a port to listen to requests on.
-const HTTP_PORT = process.env.PORT || 8080;
+const HTTP_PORT = process.env.PORT || 8084;
 
 // Call this function after the http server starts listening for requests.
 function onHttpStart() {
