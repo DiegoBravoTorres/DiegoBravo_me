@@ -8,6 +8,7 @@
     $('#PopLincoln').popup();
     $('#PopMovistar').popup();
     $('#PopGerber').popup();
+    $('#PopFordAds').popup();
     $('#thankyou').popup();
 
     // Set default `pagecontainer` for all popups (optional, but recommended for screen readers and iOS*)
