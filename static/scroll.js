@@ -32,25 +32,41 @@ function scrollFunction() {
   }
 
 
-  const observer = new IntersectionObserver(entries => {
-    // Loop over the entries
+  // Entry animations
+
+  const observerFade = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      // If the element is visible
       if (entry.isIntersecting) {
-        // Add the animation class
-        console.log("elementvisible");
-        entry.target.classList.add('show-animation');
+        entry.target.classList.add('fade-in');
+      }
+    });
+  });
+
+
+  const observerSwing = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('entry-swing');
       }
     });
   });
   
   window.onload = function(){
-    observer.observe(document.querySelector('#contactMe'));
-    observer.observe(document.querySelector('#brands'));
+    observerFade.observe(document.querySelector('#git'));
+    observerFade.observe(document.querySelector('.me-intro'));
+    observerFade.observe(document.querySelector('#contactMe'));
+    observerFade.observe(document.querySelector('.PopFord_open'));
+    observerFade.observe(document.querySelector('.PopUnknown_open'));
+    observerFade.observe(document.querySelector('.PopFoodIdeas_open'));
+    observerFade.observe(document.querySelector('.PopLincoln_open'));
+    observerFade.observe(document.querySelector('.PopMovistar_open'));
+    observerFade.observe(document.querySelector('.PopGerber_open'));
+    observerFade.observe(document.querySelector('.PopFordAds_open'));
+    observerSwing.observe(document.querySelector('#contactMe #name'));
+    observerSwing.observe(document.querySelector('#contactMe #email'));
+    observerSwing.observe(document.querySelector('#contactMe #message'));
 }
   
-
-
   
 
 // When the user clicks on the button, scroll to the top of the document
