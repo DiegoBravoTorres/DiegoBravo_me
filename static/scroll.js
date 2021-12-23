@@ -30,6 +30,27 @@ function scrollFunction() {
         document.getElementById("myUpBtn").style.display = "none";
     }
   }
+
+
+  const observer = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        // Add the animation class
+        console.log("elementvisible");
+        entry.target.classList.add('show-animation');
+      }
+    });
+  });
+  
+  window.onload = function(){
+    observer.observe(document.querySelector('#contactMe'));
+    observer.observe(document.querySelector('#brands'));
+}
+  
+
+
   
 
 // When the user clicks on the button, scroll to the top of the document

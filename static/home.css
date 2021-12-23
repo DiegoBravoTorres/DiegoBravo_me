@@ -5,6 +5,19 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes wipe-enter {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.show-animation {
+  animation: wipe-enter 1s 1;
+}
+
 .nav-item {
   color: #717171 !important;
   padding-right: 8px;
@@ -52,40 +65,34 @@ html {
   color: white;
   visibility: visible;
   margin-top: 70px;
+  text-align: center;
 }
 
 .bannerHero-mobile {
   display: none;
 }
 
-.bannerHero #line1 {
-  font-size: 30px;
+.bannerHero #line1,
+.bannerHero #line2,
+.bannerHero #line3 {
+  font-size: 29px;
   font-weight: 800;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.1em solid transparent; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  overflow: hidden;
+  border-right: 0.1em solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.bannerHero #line1 {
   animation: typing 4.5s steps(71, end), blinking 4.5s;
 }
 
 .bannerHero #line2 {
-  font-size: 30px;
-  font-weight: 800;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.1em solid transparent; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: typing 4.5s steps(71, end) 4.5s backwards,
     appearing 0.1s forwards 4.5s, blinking 0.1s forwards 9s;
 }
 
 .bannerHero #line3 {
-  font-size: 30px;
-  font-weight: 800;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.1em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: typing 4.5s steps(65, end) 9s backwards,
     appearing 0.1s backwards 9s, blink-caret 0.75s step-end infinite 13.5s;
   animation-fill-mode: backwards forwards;
