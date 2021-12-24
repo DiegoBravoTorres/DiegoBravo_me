@@ -613,6 +613,10 @@ footer a:hover {
     font-size: 15px;
   }
 
+  #connect {
+    font-size: 18px;
+  }
+
   footer {
     padding: 40px;
   }
