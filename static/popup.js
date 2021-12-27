@@ -19,3 +19,8 @@
   function off() {
     document.getElementById("overlay-thankyou").style.display = "none";
   }
+
+  function clickMeOff(){
+    document.getElementById("click-me").style.display ="none";
+    console.log("clicked!");
+  }

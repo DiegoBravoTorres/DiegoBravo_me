@@ -2,7 +2,7 @@
 // Change width of nav bar on scroll
 
 window.addEventListener('scroll', (event) => {
-    console.log(scrollY);
+   
     if (scrollY > 150) {
         document.getElementById("navbar").style.paddingTop = "12px"
         document.getElementById("navbar").style.paddingBottom = "12px"
@@ -61,6 +61,7 @@ function scrollFunction() {
     observerFade.observe(document.querySelector('.PopLincoln_open'));
     observerFade.observe(document.querySelector('.PopMovistar_open'));
     observerFade.observe(document.querySelector('.PopGerber_open'));
+    observerFade.observe(document.querySelector('.PopFordAds_open'));
     observerFade.observe(document.querySelector('.PopFordAds_open'));
     observerSwing.observe(document.querySelector('#contactMe #name'));
     observerSwing.observe(document.querySelector('#contactMe #email'));
