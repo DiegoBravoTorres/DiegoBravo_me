@@ -242,7 +242,7 @@ html {
   opacity: 0;
   cursor: pointer;
   animation: fade-in-and-out 1.9s ease-out both;
-  animation-delay: 10.3s;
+  animation-delay: 15.3s;
   animation-iteration-count: infinite;
   top: -50px;
 }
