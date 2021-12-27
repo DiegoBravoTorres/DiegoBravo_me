@@ -4,12 +4,12 @@
 window.addEventListener('scroll', (event) => {
    
     if (scrollY > 150) {
-        document.getElementById("navbar").style.paddingTop = "12px"
-        document.getElementById("navbar").style.paddingBottom = "12px"
+        document.getElementById("navbar").style.paddingTop = "10px"
+        document.getElementById("navbar").style.paddingBottom = "10px"
       }
     else
-        {document.getElementById("navbar").style.paddingTop = "26px"
-        document.getElementById("navbar").style.paddingBottom = "26px"   
+        {document.getElementById("navbar").style.paddingTop = "16px"
+        document.getElementById("navbar").style.paddingBottom = "16px"   
     }
     if (scrollY > 270) 
     {document.getElementById("navbar").style.boxShadow = "0px 0.1px 8px 1px #f0f0f0";}
