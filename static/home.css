@@ -150,8 +150,8 @@ html {
 }
 
 .bannerHero #line3 {
-  animation: typing 4.5s steps(65, end) 9s backwards,
-    appearing 0.1s backwards 9s, blink-caret 0.75s step-end infinite 13.5s;
+  animation: typing 4.5s steps(65, end) 9s backwards, appearing 0.1s forwards 9s,
+    blink-caret 0.75s step-end infinite 13.5s;
   animation-fill-mode: backwards forwards;
 }
 
