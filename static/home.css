@@ -248,6 +248,10 @@ html {
   top: -50px;
 }
 
+#fordcont {
+  transform: translateY(92%);
+}
+
 #designer {
   padding-top: 0px;
 }
@@ -597,6 +601,9 @@ footer a:hover {
   #movistar {
     width: 150px;
     margin-top: 0px;
+  }
+  #fordcont {
+    transform: translateY(67%);
   }
 
   #developer {
