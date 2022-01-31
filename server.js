@@ -65,7 +65,7 @@ app.post("/", (req,res)=>{
   const msg = {
     to: 'diegobt30@gmail.com',
     from: 'dbravo-torres@myseneca.ca', // Use the email address or domain you verified above
-    subject: 'From submission from diegobravo.me',
+    subject: 'Form submission from diegobravo.me',
     html: `Sender :  ${req.body.name}<br>With the email : ${req.body.email}
     <br><br>Message : ${req.body.message}`,
   };
