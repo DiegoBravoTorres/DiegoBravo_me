@@ -518,7 +518,7 @@ footer a:hover {
     margin-top: 77px;
   }
   .bannerHero-mobile h1 {
-    font-size: 20px;
+    font-size: 18.5px;
     font-weight: 800;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.1em solid transparent; /* The typwriter cursor */
@@ -595,7 +595,7 @@ footer a:hover {
   }
 
   .card-text {
-    font-size: 14px;
+    font-size: 13.5px;
     margin-right: 12px;
   }
 
