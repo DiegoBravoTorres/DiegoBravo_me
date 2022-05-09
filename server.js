@@ -70,17 +70,24 @@ app.post("/", (req,res)=>{
     <br><br>Message : ${req.body.message}`,
   };
 
-  sgMail.send(msg)
-  .then(() =>{
+  if(req.body.name !== "Henrypoeks"){
+      sgMail.send(msg)
+     .then(() =>{
 
-    res.render("layouts/main",{
-      name : req.body.name,
-      email: req.body.email
+        res.render("layouts/main",{
+        name : req.body.name,
+        email: req.body.email
     })
   }
   ).catch((err) =>{
     console.log(`Error : ${err}`);
   })
+    } else  {
+    res.render("layouts/main",{
+      name : "spam detected",
+      email: "spam detected"
+    })
+  }  
 
 })
 
@@ -99,7 +106,7 @@ app.use(function (err, req, res, next) {
 });
 
 // Define a port to listen to requests on.
-const HTTP_PORT = process.env.PORT || 8080;
+const HTTP_PORT = process.env.PORT || 8083;
 
 // Call this function after the http server starts listening for requests.
 function onHttpStart() {
