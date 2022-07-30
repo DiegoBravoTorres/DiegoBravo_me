@@ -38,9 +38,6 @@ app.get("/headers", (req, res) => {
 
 });
 
-
-
-
 // call this function after the http server starts listening for requests
 function onHttpStart() {
   console.log("Express http server listening on: " + HTTP_PORT);
@@ -70,10 +67,15 @@ app.post("/", (req,res)=>{
     <br><br>Message : ${req.body.message}`,
   };
 
-  if(req.body.name !== "Henrypoeks"){
+  const spamSenders = [
+    'Henrypoeks',
+    'Crytopoeks'
+  ]
+
+  if(!spamSenders.includes(req.body.name)){
+      console.log('email sent');
       sgMail.send(msg)
      .then(() =>{
-
         res.render("layouts/main",{
         name : req.body.name,
         email: req.body.email
@@ -83,6 +85,7 @@ app.post("/", (req,res)=>{
     console.log(`Error : ${err}`);
   })
     } else  {
+      console.log('email not sent spam');
     res.render("layouts/main",{
       name : "spam detected",
       email: "spam detected"
@@ -107,7 +110,7 @@ app.use(function (err, req, res, next) {
 });
 
 // Define a port to listen to requests on.
-const HTTP_PORT = process.env.PORT || 8080;
+const HTTP_PORT = process.env.PORT || 8082;
 
 // Call this function after the http server starts listening for requests.
 function onHttpStart() {
